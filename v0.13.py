@@ -150,6 +150,10 @@ def dame(x, y):
         deplacements.append([x - i, y + i])
         deplacements.append([x + i, y - i])
         deplacements.append([x - i, y - i])
+        deplacements.append([x + i, y])
+        deplacements.append([x - i, y])
+        deplacements.append([x, y + i])
+        deplacements.append([x, y - i])
     hors_limite(deplacements)
     return deplacements
 
